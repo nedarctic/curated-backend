@@ -9,9 +9,9 @@ class SubscriptionSerializer(serializers.ModelSerializer):
 class MessageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Message
-        fields = ('id', 'message', 'email')
+        fields = ('id', 'message', 'email', 'name', 'travel_dates', 'phone')
         
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = ('id', 'email', 'fromDate', 'toDate', 'destination', 'customDestination')
+        fields = ('id', 'email', 'full_name', 'phone', 'travel_date', 'special_requests', 'created_at')
