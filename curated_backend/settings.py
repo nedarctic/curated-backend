@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-5($75w3dd=%5f!s!87wrydlc+%w@9$zgzo*a2r&4kfd51hnk)*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['curatedbyray.justuskimtai.com', 'www.curatedbyray.justuskimtai.com', 'justuskimtai.com', 'www.justuskimtai.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -126,13 +126,37 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',
-    'http://localhost:8000',
+# CORS settings
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://curatedbyray.justuskimtai.com",
+    "https://www.curatedbyray.justuskimtai.com",
+    "https://justuskimtai.com",
+    "https://www.justuskimtai.com",
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://curatedbyray.justuskimtai.com",
+    "https://www.curatedbyray.justuskimtai.com",
+    "https://justuskimtai.com",
+    "https://www.justuskimtai.com",
+]
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = "None"
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = "None"
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
