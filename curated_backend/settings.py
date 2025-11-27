@@ -160,3 +160,6 @@ SESSION_COOKIE_SAMESITE = "None"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+SITE_ID = 1
+SITE_NAME = "Curated by Ray"
