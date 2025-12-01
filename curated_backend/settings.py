@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-5($75w3dd=%5f!s!87wrydlc+%w@9$zgzo*a2r&4kfd51hnk)*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['curatedbyray.justuskimtai.com', 'www.curatedbyray.justuskimtai.com', 'justuskimtai.com', 'www.justuskimtai.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['www.curatedbyray.com', 'curatedbyray.com', 'www.backend.curatedbyray.com', 'backend.curatedbyray.com', 'curatedbyray.justuskimtai.com', 'www.curatedbyray.justuskimtai.com', 'justuskimtai.com', 'www.justuskimtai.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
