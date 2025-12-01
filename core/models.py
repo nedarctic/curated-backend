@@ -23,6 +23,7 @@ class Booking(models.Model):
     travel_date = models.DateField(null=True)
     special_requests = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
+    custom_destination_name = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return f"Booking from {self.full_name} ({self.email})"
