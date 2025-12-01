@@ -14,4 +14,4 @@ class MessageSerializer(serializers.ModelSerializer):
 class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
-        fields = ('id', 'email', 'full_name', 'phone', 'travel_date', 'special_requests', 'created_at')
+        fields = ('id', 'email', 'full_name', 'phone', 'travel_date', 'special_requests', 'custom_destination_name', 'created_at')
