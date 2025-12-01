@@ -2,7 +2,7 @@ import os
 import sys
 
 
-project_home = '/home/justuski/curatedbyray.justuskimtai.com'
+project_home = '/home1/curatedb/backend.curatedbyray.com'
 if project_home not in sys.path:
     sys.path.insert(0, project_home)
 
