@@ -141,6 +141,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://www.curatedbyray.justuskimtai.com",
     "https://justuskimtai.com",
     "https://www.justuskimtai.com",
+    "https://www.curatedbyray.com",
+    "https://curatedbyray.com",
+    "https://www.backend.curatedbyray.com",
+    "https://backend.curatedbyray.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -150,6 +154,10 @@ CSRF_TRUSTED_ORIGINS = [
     "https://www.curatedbyray.justuskimtai.com",
     "https://justuskimtai.com",
     "https://www.justuskimtai.com",
+    "https://www.curatedbyray.com",
+    "https://curatedbyray.com",
+    "https://www.backend.curatedbyray.com",
+    "https://backend.curatedbyray.com",
 ]
 
 CSRF_COOKIE_SECURE = True
